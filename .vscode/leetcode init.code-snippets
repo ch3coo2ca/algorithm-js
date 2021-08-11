@@ -1,0 +1,51 @@
+{
+  // Place your algorithm-js workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Leetcode init": {
+    "scope": "javascript",
+    "prefix": "leet",
+    "body": [
+      "/** [LeetCode] TopicName - xxx",
+      " * Created by jylee on 2021-02-07",
+      " */"
+    ],
+    "description": "Initialize leetcode solution"
+  },
+  "Baekjoon init": {
+    "scope": "javascript",
+    "prefix": "baekjoon",
+    "body": [
+      "/** [Baekjoon] #000 - xxx",
+      " * Created by jylee on 2021-08-08",
+      " */",
+      "const readline = require('readline')",
+
+      "const rl = readline.createInterface({",
+      "input: process.stdin,",
+      "output: process.stdout,",
+      "});",
+      "let input = [];",
+      "rl.on('line', function (line) {",
+      "input.push(line);",
+      "}).on('close', function () {",
+      "const nums = input[1].split(' ').map((s) => parseInt(s));",
+      "solution(nums);",
+      "});"
+    ],
+    "description": "Initialize baekjoon solution"
+  }
+}
